@@ -13,6 +13,11 @@ lvim.log.level = "warn"
 lvim.format_on_save = false
 lvim.colorscheme = "onedark"
 
+-- Vim options
+vim.opt.relativenumber = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+
 -- Additional Plugins
 lvim.plugins = {
   -- Automcompletion
