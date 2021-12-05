@@ -11,20 +11,28 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "onedark"
 
 -- Additional Plugins
 lvim.plugins = {
+  -- Automcompletion
   {
     "tzachar/cmp-tabnine",
     run = "./install.sh",
     requires = "hrsh7th/nvim-cmp",
     event = "InsertEnter",
   },
+
+  -- Formated symbols
   {
     "simrat39/symbols-outline.nvim",
     cmd = "SymbolsOutline",
   },
+
+  -- Colorschemes
+  {
+    "joshdick/onedark.vim"
+  }
 }
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
