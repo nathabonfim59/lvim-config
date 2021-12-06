@@ -28,6 +28,9 @@ lvim.plugins = {
     event = "InsertEnter",
   },
 
+  -- Rainbow brackets
+  { "ChristianChiarulli/nvim-ts-rainbow" },
+
   -- Formated symbols
   {
     "simrat39/symbols-outline.nvim",
@@ -97,3 +100,16 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
+lvim.builtin.treesitter.rainbow = {
+  enable = true,
+  extended_mode = true,
+  max_file_lines = 10000,
+  colors = {
+    "Gold",
+    "Orchid",
+    "DodgerBlue",
+    "Cornsilk",
+    "Salmon",
+    "LawnGreen",
+  },
+}
