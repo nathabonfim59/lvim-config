@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "onedark"
+lvim.colorscheme = "onedarker"
 
 -- Vim options
 vim.opt.relativenumber = true
