@@ -52,6 +52,10 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["O"] = { "<cmd>SymbolsOutline<CR>", "Document symbols" }
+lvim.builtin.which_key.mappings["n"] = {
+    name = "+NvimTree",
+    b = {"<cmd>lua require'nvim-tree.lib'.collapse_all()<CR>", "Collapse all foldes" }
+}
 
 -- lvim.builtin.which_key.mappings["t"] = {
 --   name = "+Trouble",
