@@ -28,6 +28,11 @@ lvim.plugins = {
     event = "InsertEnter",
   },
 
+  -- Change sorroundings
+  {
+    "tpope/vim-surround"
+  },
+
   -- Rainbow brackets
   { "ChristianChiarulli/nvim-ts-rainbow" },
 
@@ -54,7 +59,8 @@ lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Project
 lvim.builtin.which_key.mappings["O"] = { "<cmd>SymbolsOutline<CR>", "Document symbols" }
 lvim.builtin.which_key.mappings["n"] = {
     name = "+NvimTree",
-    b = {"<cmd>lua require'nvim-tree.lib'.collapse_all()<CR>", "Collapse all foldes" }
+    b = {"<cmd>lua require'nvim-tree.lib'.collapse_all()<CR>", "Collapse all foldes" },
+    r = {"<cmdNvimTreeRefresh<CR>", "Refresh" }
 }
 
 -- lvim.builtin.which_key.mappings["t"] = {
