@@ -8,45 +8,13 @@ an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
+require "user.settings"
+require "user.plugins"
+
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
 lvim.colorscheme = "onedarker"
-
--- Vim options
-vim.opt.relativenumber = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-
--- Additional Plugins
-lvim.plugins = {
-  -- Automcompletion
-  {
-    "tzachar/cmp-tabnine",
-    run = "./install.sh",
-    requires = "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
-  },
-
-  -- Change sorroundings
-  {
-    "tpope/vim-surround"
-  },
-
-  -- Rainbow brackets
-  { "ChristianChiarulli/nvim-ts-rainbow" },
-
-  -- Formated symbols
-  {
-    "simrat39/symbols-outline.nvim",
-    cmd = "SymbolsOutline",
-  },
-
-  -- Colorschemes
-  {
-    "joshdick/onedark.vim"
-  }
-}
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
