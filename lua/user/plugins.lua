@@ -26,5 +26,13 @@ lvim.plugins = {
   -- Colorschemes
   {
     "joshdick/onedark.vim"
+  },
+
+  -- Highlight hex and rgb colors
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function ()
+      require("user.colorizer").config()
+    end
   }
 }
