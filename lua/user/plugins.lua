@@ -34,5 +34,27 @@ lvim.plugins = {
     config = function ()
       require("user.colorizer").config()
     end
+  },
+
+  -- Support editor config
+  {
+    'gpanders/editorconfig.nvim'
+  },
+
+  -- Track coding hours
+  {
+    'wakatime/vim-wakatime'
+  },
+
+  -- Database completion and connection
+  {
+    "tpope/vim-dadbod",
+    requires = {
+      "kristijanhusak/vim-dadbod-ui",
+      "kristijanhusak/vim-dadbod-completion"
+    },
+    config = function ()
+      require("user.dadbod").config()
+    end
   }
 }
