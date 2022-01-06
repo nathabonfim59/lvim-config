@@ -56,5 +56,13 @@ lvim.plugins = {
     config = function ()
       require("user.dadbod").config()
     end
+  },
+
+  -- Local history on VIM
+  {
+		"dinhhuy258/vim-local-history",
+    config = function ()
+      require("user.localhistory").config()
+    end
   }
 }
