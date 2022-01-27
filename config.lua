@@ -1,6 +1,7 @@
 --[[
 lvim is the global options object
 
+
 Linters should be
 filled in as strings with either
 a global executable or a path to
@@ -30,6 +31,18 @@ lvim.builtin.which_key.mappings["n"] = {
     b = {"<cmd>lua require'nvim-tree.lib'.collapse_all()<CR>", "Collapse all foldes" },
     r = {"<cmdNvimTreeRefresh<CR>", "Refresh" }
 }
+
+lvim.builtin.which_key.mappings["D"] = {
+  name = "+Database",
+  u = { "<Cmd>DBUIToggle<Cr>", "Toggle UI" },
+  f = { "<Cmd>DBUIFindBuffer<Cr>", "Find buffer" },
+  r = { "<Cmd>DBUIRenameBuffer<Cr>", "Rename buffer" },
+  q = { "<Cmd>DBUILastQueryInfo<Cr>", "Last query info" },
+}
+
+
+-- Local history keymappings
+lvim.builtin.which_key.mappings["H"] = { "<cmd>LocalHistoryToggle<CR>", "Local history" }
 
 -- lvim.builtin.which_key.mappings["t"] = {
 --   name = "+Trouble",
