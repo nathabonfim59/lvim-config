@@ -104,3 +104,5 @@ lvim.builtin.treesitter.rainbow = {
     "LawnGreen",
   },
 }
+
+lvim.builtin.treesitter.indent = { disable = true }
