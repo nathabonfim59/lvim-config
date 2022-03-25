@@ -56,8 +56,8 @@ lvim.builtin.which_key.mappings["H"] = { "<cmd>LocalHistoryToggle<CR>", "Local h
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.dashboard.active = true
-lvim.builtin.dashboard.custom_header = {
+lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.alpha.dashboard.section.header.val = {
 "  _______________                                                                           ",
 " |[]            |                                                                           ",
 " |  __________  |        ███╗   ██╗ █████╗ ████████╗██╗  ██╗ █████╗ ██╗   ██╗██╗███╗   ███╗ ",
