@@ -40,6 +40,12 @@ lvim.builtin.which_key.mappings["D"] = {
   q = { "<Cmd>DBUILastQueryInfo<Cr>", "Last query info" },
 }
 
+-- Tiling keymaps
+lvim.builtin.which_key.mappings["t"] = {
+  name = "+Tiling",
+  n = { "<Cmd>tabe %|set nonu<Cr>", "Open in new tab" },
+  q = { "<Cmd>q<Cr>", "Quit" },
+}
 
 -- Local history keymappings
 lvim.builtin.which_key.mappings["H"] = { "<cmd>LocalHistoryToggle<CR>", "Local history" }
