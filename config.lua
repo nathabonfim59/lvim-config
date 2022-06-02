@@ -15,7 +15,7 @@ require "user.plugins"
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "tokyonight"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"

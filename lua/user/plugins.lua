@@ -25,7 +25,7 @@ lvim.plugins = {
 
   -- Colorschemes
   {
-    "joshdick/onedark.vim"
+    "folke/tokyonight.nvim"
   },
 
   -- Highlight hex and rgb colors
