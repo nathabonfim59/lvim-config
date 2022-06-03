@@ -7,6 +7,8 @@ vim.opt.laststatus = 3
 vim.opt.formatoptions = "jqrocb" -- TODO: Does not work.
 
 -- Colorscheme variation
-vim.g.tokyonight_style = "night"
-
-
+-- vim.g.tokyonight_style = "night"
+-- vim.g.onedark_config = "darker"
+require('onedark').setup {
+    style = 'darker'
+}
