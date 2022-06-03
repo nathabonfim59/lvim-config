@@ -50,6 +50,9 @@ lvim.builtin.which_key.mappings["t"] = {
 -- Local history keymappings
 lvim.builtin.which_key.mappings["H"] = { "<cmd>LocalHistoryToggle<CR>", "Local history" }
 
+-- Add TODO Telescope support
+lvim.builtin.which_key.mappings['l']['t'] = { "<cmd>TodoTelescope<CR>", "Find TODO comments" }
+
 -- lvim.builtin.which_key.mappings["t"] = {
 --   name = "+Trouble",
 --   r = { "<cmd>Trouble lsp_references<cr>", "References" },

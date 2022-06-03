@@ -65,5 +65,14 @@ lvim.plugins = {
     config = function ()
       require("user.localhistory").config()
     end
-  }
+  },
+
+	-- TODO manager
+	{
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("user.todo").config()
+		end
+	}
 }
