@@ -74,5 +74,11 @@ lvim.plugins = {
 		config = function()
 			require("user.todo").config()
 		end
+	},
+
+	-- Winbar GPS
+	{
+		"christianchiarulli/nvim-gps",
+		branch = "text_hl",
 	}
 }

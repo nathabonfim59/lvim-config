@@ -11,6 +11,7 @@ an executable
 
 require "user.settings"
 require "user.plugins"
+require "user.autocommands"
 
 -- general
 lvim.log.level = "warn"
