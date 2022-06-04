@@ -32,3 +32,42 @@ Easily recover (even uncommited) changes.
 > Feature thanks to https://github.com/dinhhuy258/vim-local-history
 
 
+#### 2. Change sorroundings
+> Plugin Repository: https://github.com/tpope/vim-surround
+
+
+#### 3. Rainbow brackets
+> Plugin Repository: https://github.com/ChristianChiarulli/nvim-ts-rainbow
+
+
+#### 4. Formated symbols
+> Plugin Repository: https://github.com/simrat39/symbols-outline.nvim
+
+
+#### 5. Colorschemes
+> Plugin Repository: https://github.com/navarasu/onedark.nvim
+
+
+#### 6. Highlight hex and rgb colors
+> Plugin Repository: https://github.com/norcalli/nvim-colorizer.lua
+
+
+#### 7. Support editor config
+> Plugin Repository: https://github.com/tpope/vim-dadbod
+
+
+#### 8. Local history on VIM
+> Plugin Repository: https://github.com/dinhhuy258/vim-local-history
+
+
+#### 9. TODO manager
+> Plugin Repository: https://github.com/folke/todo-comments.nvim
+
+
+#### 10. Winbar GPS
+> Plugin Repository: https://github.com/christianchiarulli/nvim-gps
+
+
+#### 11. AI Automcompletion
+> Plugin Repository: https://github.com/tzachar/cmp-tabnine
+
