@@ -17,27 +17,27 @@ There is also a bunch of open-source plugins here.
 > git clone https://github.com/nathabonfim59/lvim-config ~/.config/lvim
 
 ## Features
-[#### 1. File History](#1-file-history)
+[1. File History](#1-file-history)
 
-[#### 2. Change sorroundings](#2-change-sorroundings)
+[2. Change sorroundings](#2-change-sorroundings)
 
-[#### 3. Rainbow brackets](#3-rainbow-brackets)
+[3. Rainbow brackets](#3-rainbow-brackets)
 
-[#### 4. Formated symbols](#4-formated-symbols)
+[4. Formated symbols](#4-formated-symbols)
 
-[#### 5. Colorschemes](#5-colorschemes)
+[5. Colorschemes](#5-colorschemes)
 
-[#### 6. Highlight hex and rgb colors](#6-highlight-hex-and-rgb-colors)
+[6. Highlight hex and rgb colors](#6-highlight-hex-and-rgb-colors)
 
-[#### 7. Support editor config](#7-support-editor-config)
+[7. Support editor config](#7-support-editor-config)
 
-[#### 8. Local history on VIM](#8-local-history-on-vim)
+[8. Local history on VIM](#8-local-history-on-vim)
 
-[#### 9. TODO manager](#9-todo-manager)
+[9. TODO manager](#9-todo-manager)
 
-[#### 10. Winbar GPS](#10-winbar-gps)
+[10. Winbar GPS](#10-winbar-gps)
 
-[#### 11. AI Automcompletion](#11-ai-automcompletion)
+[11. AI Automcompletion](#11-ai-automcompletion)
 
 
 #### 1. File History
