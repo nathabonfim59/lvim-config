@@ -79,6 +79,7 @@ lvim.plugins = {
 	-- Winbar GPS
 	{
 		"SmiteshP/nvim-gps",
-		requires = "nvim-treesitter/nvim-treesitter"
+		requires = "nvim-treesitter/nvim-treesitter",
+		config = require("nvim-gps").setup()
 	}
 }
