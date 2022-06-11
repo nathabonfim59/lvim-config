@@ -78,7 +78,7 @@ lvim.plugins = {
 
 	-- Winbar GPS
 	{
-		"christianchiarulli/nvim-gps",
-		branch = "text_hl",
+		"SmiteshP/nvim-gps",
+		requires = "nvim-treesitter/nvim-treesitter"
 	}
 }
