@@ -1,5 +1,6 @@
 vim.cmd[[setlocal shiftwidth=4]]
 vim.cmd[[setlocal tabstop=4]]
 
-require("lvim.lsp.manager").setup("phpactor")
-require("lvim.lsp.manager").setup("tailwindcss")
+-- Disable rarely used LSPs
+-- require("lvim.lsp.manager").setup("phpactor")
+-- require("lvim.lsp.manager").setup("tailwindcss")
