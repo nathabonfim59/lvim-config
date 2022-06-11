@@ -115,4 +115,4 @@ lvim.builtin.treesitter.rainbow = {
   },
 }
 
-lvim.builtin.treesitter.indent = { disable = true }
+-- lvim.builtin.treesitter.indent = { disable = true }
