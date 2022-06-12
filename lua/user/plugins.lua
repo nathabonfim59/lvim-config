@@ -81,5 +81,11 @@ lvim.plugins = {
 		"SmiteshP/nvim-gps",
 		requires = "nvim-treesitter/nvim-treesitter",
 		config = require("nvim-gps").setup()
+	},
+
+	-- Highlight unique words to use with 'fF'/'tT' motions
+	{
+		"unblevable/quick-scope",
+		config = require("user.quick-scope").config()
 	}
 }
