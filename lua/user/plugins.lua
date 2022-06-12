@@ -87,5 +87,10 @@ lvim.plugins = {
 	{
 		"unblevable/quick-scope",
 		config = require("user.quick-scope").config()
+	},
+
+	-- Caching and other performance improvements
+	{
+		"lewis6991/impatient.nvim"
 	}
 }
