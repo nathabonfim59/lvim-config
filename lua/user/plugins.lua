@@ -92,5 +92,10 @@ lvim.plugins = {
 	-- Caching and other performance improvements
 	{
 		"lewis6991/impatient.nvim"
+	},
+	-- Line guides for indentation
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		config = require("user.indent-blankline").config()
 	}
 }

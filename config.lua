@@ -41,6 +41,12 @@ lvim.builtin.which_key.mappings["D"] = {
   q = { "<Cmd>DBUILastQueryInfo<Cr>", "Last query info" },
 }
 
+lvim.builtin.which_key.mappings["G"] = {
+  name = "+Blanklines",
+  i = { "<Cmd>let g:indent_blankline_enabled = v:true<Cr>", "Toggle indent" },
+  c = { "<Cmd>let g:indent_blankline_show_current_context = v:true<Cr>", "Toggle Context" },
+  s = { "<Cmd>set list<Cr>", "Toggle special chars" },
+}
 -- Tiling keymaps
 lvim.builtin.which_key.mappings["t"] = {
   name = "+Tiling",
