@@ -97,5 +97,11 @@ lvim.plugins = {
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		config = require("user.indent-blankline").config()
+	},
+	-- Sticky scroll context (with treesitter)
+	{
+		"nvim-treesitter/nvim-treesitter-context",
+		requires = "nvim-treesitter/nvim-treesitter",
+		config = require("user.sticky-scroll").config()
 	}
 }

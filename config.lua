@@ -93,6 +93,7 @@ lvim.transparent_window = true
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
+  "php",
   "javascript",
   "json",
   "lua",
