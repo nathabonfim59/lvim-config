@@ -49,9 +49,10 @@ lvim.builtin.which_key.mappings["G"] = {
 }
 -- Tiling keymaps
 lvim.builtin.which_key.mappings["t"] = {
-  name = "+Tiling",
-  n = { "<Cmd>tabe %|set nonu<Cr>", "Open in new tab" },
-  q = { "<Cmd>q<Cr>", "Quit" },
+  name = "+Tools",
+	-- TODO: Implement open current buffer json playground
+  -- j = { "<Cmd>tabe %|set nonu<Cr>", "Open in JSON playground (jqp)" },
+  -- q = { "<Cmd>q<Cr>", "Quit" },
 }
 
 -- Local history keymappings
@@ -87,7 +88,7 @@ lvim.builtin.alpha.dashboard.section.header.val = {
 
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.transparent_window = true
+-- lvim.transparent_window = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
