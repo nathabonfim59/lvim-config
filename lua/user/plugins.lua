@@ -24,10 +24,12 @@ lvim.plugins = {
   },
 
   -- Colorschemes
-  {
-		"navarasu/onedark.nvim",
-    -- "folke/tokyonight.nvim"
-  },
+  {"navarasu/onedark.nvim"},
+	{"EdenEast/nightfox.nvim"},
+	{"sainnhe/sonokai"},
+	{"marko-cerovac/material.nvim"},
+	{"Mofiqul/vscode.nvim"},
+	{"rafamadriz/neon"},
 
   -- Highlight hex and rgb colors
   {
