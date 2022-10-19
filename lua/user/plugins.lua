@@ -103,5 +103,9 @@ lvim.plugins = {
 		"nvim-treesitter/nvim-treesitter-context",
 		requires = "nvim-treesitter/nvim-treesitter",
 		config = require("user.sticky-scroll").config()
+	},
+	-- Add DBML Support
+	{
+		"jidn/vim-dbml"
 	}
 }
