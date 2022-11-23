@@ -13,6 +13,10 @@ require "user.settings"
 require "user.plugins"
 require "user.autocommands"
 
+-- LSP configs
+lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
+table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
+
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false

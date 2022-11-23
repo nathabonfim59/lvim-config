@@ -2,11 +2,50 @@
 -- Additional Plugins
 lvim.plugins = {
   -- Automcompletion
+  -- {
+  --   "tzachar/cmp-tabnine",
+  --   run = "./install.sh",
+  --   requires = "hrsh7th/nvim-cmp",
+  --   event = "InsertEnter",
+  -- },
   {
-    "tzachar/cmp-tabnine",
-    run = "./install.sh",
-    requires = "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
+      "github/copilot.vim",
+      -- config = function()
+      --   require("user.copilot").config()
+      -- end,
+      -- disable = not lvim.builtin.sell_your_soul_to_devil.active or lvim.builtin.sell_your_soul_to_devil.prada,
+    },
+	{
+		"zbirenbaum/copilot.lua",
+		after = "nvim-cmp",
+		requires = { "zbirenbaum/copilot-cmp" },
+		event = { "InsertEnter" },
+		config = function()
+			vim.defer_fn(function()
+				require("copilot").setup {
+					plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
+				}
+				end, 100)
+		end,
+		-- config = function()
+		-- local cmp_source = { name = "copilot", group_index = 2 }
+		-- table.insert(lvim.builtin.cmp.sources, cmp_source)
+		-- vim.defer_fn(function()
+		--   require("copilot").setup()
+		-- end, 100)
+		-- end,
+		-- disable = not lvim.builtin.sell_your_soul_to_devil.prada,
+	},
+  {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function()
+      require("copilot_cmp").setup {
+        formatters = {
+          insert_text = require("copilot_cmp.format").remove_existing,
+        },
+      }
+    end,
   },
 
   -- Change sorroundings
