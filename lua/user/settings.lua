@@ -11,6 +11,3 @@ vim.cmd[[set formatoptions +=jqrocb]]
 -- Colorscheme variation
 -- vim.g.tokyonight_style = "night"
 -- vim.g.onedark_config = "darker"
-require('onedark').setup {
-    style = 'warmer'
-}

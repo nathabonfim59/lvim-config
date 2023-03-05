@@ -63,7 +63,14 @@ lvim.plugins = {
   },
 
   -- Colorschemes
-  {"navarasu/onedark.nvim"},
+  {
+    "navarasu/onedark.nvim",
+    config = function()
+      require('onedark').setup {
+        style = 'warmer'
+      }
+    end
+  },
 	{"EdenEast/nightfox.nvim"},
 	{"sainnhe/sonokai"},
 	{"marko-cerovac/material.nvim"},
