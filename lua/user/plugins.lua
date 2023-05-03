@@ -134,3 +134,5 @@ lvim.plugins = {
 		"jidn/vim-dbml"
 	}
 }
+
+lvim.transparent_window = true
