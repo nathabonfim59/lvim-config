@@ -1,3 +1,6 @@
+vim.cmd[[setlocal shiftwidth=2]]
+vim.cmd[[setlocal tabstop=2]]
+
 -- Set up LSP for Dart
 if vim.fn.executable("dart") == 1 then
 	require("lspconfig").dartls.setup({
