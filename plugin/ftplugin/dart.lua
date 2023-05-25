@@ -1,5 +1,5 @@
-vim.cmd[[setlocal shiftwidth=2]]
-vim.cmd[[setlocal tabstop=2]]
+
+
 
 -- Set up LSP for Dart
 if vim.fn.executable("dart") == 1 then
@@ -15,3 +15,7 @@ if vim.fn.executable("dart") == 1 then
 	vim.cmd[[nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>]]
 end
 
+
+-- Set tabstop and shiftwidth
+vim.opt_local.tabstop = 2
+vim.opt_local.shiftwidth = 2
