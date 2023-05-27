@@ -20,7 +20,8 @@ table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "onedark"
+lvim.colorscheme = "vscode"
+-- lvim.colorscheme = "onedark"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -92,7 +93,7 @@ lvim.builtin.alpha.dashboard.section.header.val = {
 
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
--- lvim.transparent_window = true
+lvim.transparent_window = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
