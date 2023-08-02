@@ -12,7 +12,7 @@ lvim.plugins = {
 	{
 		"zbirenbaum/copilot.lua",
 		after = "nvim-cmp",
-		requires = { "zbirenbaum/copilot-cmp" },
+		dependencies = { "zbirenbaum/copilot-cmp" },
 		event = { "InsertEnter" },
 		config = function()
 				require("copilot").setup {
@@ -82,7 +82,7 @@ lvim.plugins = {
   -- Database completion and connection
   {
     "tpope/vim-dadbod",
-    requires = {
+    dependencies = {
       "kristijanhusak/vim-dadbod-ui",
       "kristijanhusak/vim-dadbod-completion"
     },
@@ -102,7 +102,7 @@ lvim.plugins = {
 	-- TODO manager
 	{
 		"folke/todo-comments.nvim",
-		requires = "nvim-lua/plenary.nvim",
+		dependencies = "nvim-lua/plenary.nvim",
 		config = function()
 			require("user.todo").config()
 		end
@@ -126,7 +126,7 @@ lvim.plugins = {
 	-- Sticky scroll context (with treesitter)
 	{
 		"nvim-treesitter/nvim-treesitter-context",
-		requires = "nvim-treesitter/nvim-treesitter",
+		dependencies = "nvim-treesitter/nvim-treesitter",
 		config = require("user.sticky-scroll").config()
 	},
 	-- Add DBML Support
