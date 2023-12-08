@@ -1,13 +1,12 @@
-
 -- Additional Plugins
 lvim.plugins = {
-  -- Tabnine (uncomment to enable)
-  -- {
-  --   "tzachar/cmp-tabnine",
-  --   run = "./install.sh",
-  --   requires = "hrsh7th/nvim-cmp",
-  --   event = "InsertEnter",
-  -- },
+	-- Tabnine (uncomment to enable)
+	-- {
+	--   "tzachar/cmp-tabnine",
+	--   run = "./install.sh",
+	--   requires = "hrsh7th/nvim-cmp",
+	--   event = "InsertEnter",
+	-- },
 	-- Github Copilot
 	{
 		"zbirenbaum/copilot.lua",
@@ -15,89 +14,94 @@ lvim.plugins = {
 		dependencies = { "zbirenbaum/copilot-cmp" },
 		event = { "InsertEnter" },
 		config = function()
-				require("copilot").setup {
-					plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
-				}
+			require("copilot").setup {
+				plugin_manager_path = os.getenv "LUNARVIM_RUNTIME_DIR" .. "/site/pack/packer",
+			}
 		end,
 	},
-  {
-    "zbirenbaum/copilot-cmp",
-    after = { "copilot.lua" },
-    config = function()
-      require("copilot_cmp").setup {
-        formatters = {
-          insert_text = require("copilot_cmp.format").remove_existing,
-        },
-      }
-    end,
-  },
+	{
+		"zbirenbaum/copilot-cmp",
+		after = { "copilot.lua" },
+		config = function()
+			require("copilot_cmp").setup {
+				formatters = {
+					insert_text = require("copilot_cmp.format").remove_existing,
+				},
+			}
+		end,
+	},
 
-  -- Change sorroundings
-  {
-    "tpope/vim-surround"
-  },
+	-- Change sorroundings
+	{
+		"tpope/vim-surround"
+	},
 
-  -- Rainbow brackets
-  { "ChristianChiarulli/nvim-ts-rainbow" },
+	-- Rainbow brackets
+	{ "ChristianChiarulli/nvim-ts-rainbow" },
 
-  -- Formated symbols
-  {
-    "simrat39/symbols-outline.nvim",
-    cmd = "SymbolsOutline",
-  },
+	-- Formated symbols
+	{
+		"simrat39/symbols-outline.nvim",
+		cmd = "SymbolsOutline",
+	},
 
-  -- Colorschemes
-  {
-    "navarasu/onedark.nvim",
-    config = function()
-      require('onedark').setup {
-        style = 'warmer'
-      }
-    end
-  },
-	{"EdenEast/nightfox.nvim"},
-	{"sainnhe/sonokai"},
-	{"marko-cerovac/material.nvim"},
-	{"Mofiqul/vscode.nvim"},
-	{"rafamadriz/neon"},
+	-- Colorschemes
+	{
+		"navarasu/onedark.nvim",
+		config = function()
+			require('onedark').setup {
+				style = 'warmer'
+			}
+		end
+	},
+	{ "EdenEast/nightfox.nvim" },
+	{ "sainnhe/sonokai" },
+	{ "marko-cerovac/material.nvim" },
+	{ "Mofiqul/vscode.nvim" },
+	{ "rafamadriz/neon" },
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000
+	},
 
-  -- Highlight hex and rgb colors
-  {
-    "norcalli/nvim-colorizer.lua",
-    config = function ()
-      require("user.colorizer").config()
-    end
-  },
+	-- Highlight hex and rgb colors
+	{
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("user.colorizer").config()
+		end
+	},
 
-  -- Support editor config
-  {
-    'gpanders/editorconfig.nvim'
-  },
+	-- Support editor config
+	{
+		'gpanders/editorconfig.nvim'
+	},
 
-  -- Track coding hours
-  {
-    'wakatime/vim-wakatime'
-  },
+	-- Track coding hours
+	{
+		'wakatime/vim-wakatime'
+	},
 
-  -- Database completion and connection
-  {
-    "tpope/vim-dadbod",
-    dependencies = {
-      "kristijanhusak/vim-dadbod-ui",
-      "kristijanhusak/vim-dadbod-completion"
-    },
-    config = function ()
-      require("user.dadbod").config()
-    end
-  },
+	-- Database completion and connection
+	{
+		"tpope/vim-dadbod",
+		dependencies = {
+			"kristijanhusak/vim-dadbod-ui",
+			"kristijanhusak/vim-dadbod-completion"
+		},
+		config = function()
+			require("user.dadbod").config()
+		end
+	},
 
-  -- Local history on VIM
-  {
+	-- Local history on VIM
+	{
 		"dinhhuy258/vim-local-history",
-    config = function ()
-      require("user.localhistory").config()
-    end
-  },
+		config = function()
+			require("user.localhistory").config()
+		end
+	},
 
 	-- TODO manager
 	{
@@ -132,7 +136,11 @@ lvim.plugins = {
 	-- Add DBML Support
 	{
 		"jidn/vim-dbml"
-	}
+	},
+	-- Enable inlay hints (intellij-like virtual paramaters)
+	{
+		"lvimuser/lsp-inlayhints.nvim",
+	},
 }
 
 lvim.transparent_window = true
