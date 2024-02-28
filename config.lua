@@ -21,8 +21,9 @@ table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
 lvim.log.level = "warn"
 lvim.format_on_save = false
 -- lvim.colorscheme = "catppuccin-macchiato"
-lvim.colorscheme = "vscode"
+-- lvim.colorscheme = "oxocarbon"
 -- lvim.colorscheme = "onedark"
+lvim.colorscheme = "vscode"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -61,6 +62,26 @@ lvim.builtin.which_key.mappings["t"] = {
 	-- q = { "<Cmd>q<Cr>", "Quit" },
 }
 
+-- Harpoon
+-- lvim.builtin.which_key.mappings['N'] = {
+-- 	name = "+Harpoon",
+-- 	a = { "<cmd>lua Harpoon:list():append()<CR>", "Add current file to harpoon" },
+-- 	f = { "<cmd>lua HarpoonTelescope(Harpoon:list())<CR>", "Toggle harpoon list" },
+-- 	q = { "<cmd>lua Harpoon.ui:toggle_quick_menu(Harpoon:list())<CR>", "Quick menu" },
+
+-- 	-- Next in list
+-- 	l = { "<cmd>lua Harpoon:list():next()<CR>", "Next in list" },
+-- 	h = { "<cmd>lua Harpoon:list():prev()<CR>", "Previous in list" },
+-- }
+
+-- -- Select numbered
+-- lvim.builtin.which_key.mappings['N']['1'] = { "<cmd>lua Harpoon:list():select(1)<CR>", "Select 1" }
+-- lvim.builtin.which_key.mappings['N']['2'] = { "<cmd>lua Harpoon:list():select(2)<CR>", "Select 2" }
+-- lvim.builtin.which_key.mappings['N']['3'] = { "<cmd>lua Harpoon:list():select(3)<CR>", "Select 3" }
+-- lvim.builtin.which_key.mappings['N']['4'] = { "<cmd>lua Harpoon:list():select(4)<CR>", "Select 4" }
+-- lvim.builtin.which_key.mappings['N']['5'] = { "<cmd>lua Harpoon:list():select(5)<CR>", "Select 5" }
+
+
 -- Local history keymappings
 lvim.builtin.which_key.mappings["H"] = { "<cmd>LocalHistoryToggle<CR>", "Local history" }
 
@@ -97,7 +118,7 @@ lvim.builtin.alpha.dashboard.section.header.val = {
 
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.transparent_window = true
+lvim.transparent_window = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
